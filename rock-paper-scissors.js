@@ -1,12 +1,6 @@
 const userChoice = (userInput) => {
   userInput = userInput.toLowerCase();
-  if (
-    userInput === "rock" ||
-    userInput === "scissors" ||
-    userInput === "paper"
-  ) {
-    return userInput;
-  }
+  return userInput;
 };
 const computerChoice = function () {
   do {
@@ -47,4 +41,4 @@ function whoWins(userChoice, botChoice) {
     console.log(`${userChoice} vs ${botChoice} \nCongratulations, you win!`);
   }
 }
-whoWins(userChoice("Rock"), botChoice);
+whoWins(userChoice("paper"), botChoice);
